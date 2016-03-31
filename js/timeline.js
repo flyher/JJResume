@@ -83,6 +83,31 @@ timelineApp.controller("timelineController", function ($scope) {
                     id: 4,
                     description: "微信公众号：jjdiary"
                 },
+                {
+                    id: 5,
+                    description: "技能："
+                },
+                {
+                    id: 6,
+                    description: ".NET系列：ASP.NET，.NET MVC，WP8，Web服务 等"
+                },
+                {
+                    id: 7,
+                    description: "JS系列：JQuery，AngularJS1，React(学习中)，AngularJS2(学习中)"
+                },
+                {
+                    id: 8,
+                    description: "CSS系列：BootStrap 等"
+                },
+                {
+                    id: 9,
+                    description: "工具：WebPack(学习中)"
+                },
+                {
+                    id: 10,
+                    description: "其他：写过D3JS，改过ASP，python代码，看过dephin，学过C++游戏开发(还做过一个简单的小游戏，不过已经忘记)"
+                }
+
             ],
             keywords: "Web开发 AngularJS ASP.NET C# HTML CSS SQL Oracle 互联网 电子商务",
             location: "上海",
@@ -1339,6 +1364,8 @@ timelineApp.controller("timelineController", function ($scope) {
             }
         ]
     };
+
+    $scope.ie8 = false;
 
     $scope.projects_tmp =angular.copy($scope.timeline.projects);
 
