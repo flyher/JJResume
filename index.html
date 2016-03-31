@@ -14,7 +14,7 @@
     <link href="css/index.css" rel="stylesheet" />
 
 </head>
-<body ng-app="timelineApp" ng-controller="timelineController" class="ng-cloak">
+<body>
     <div class="blog-masthead" ng-style="{'background-color':linecolor}">
         <div class="container">
             <nav class="blog-nav">
@@ -26,7 +26,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container" ng-app="timelineApp" ng-controller="timelineController" class="ng-cloak">
         <div class="blog-header">
             <h1 class="blog-title">简历</h1>
             <p class="lead blog-description">这里仅仅是一些项目经历</p>
