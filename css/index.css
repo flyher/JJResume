@@ -1,0 +1,143 @@
+﻿.ng-cloak{
+    display:none;
+}
+.hidden{
+    display:none !important;
+}
+.line{
+    margin-left:70px;
+
+}
+.line li{
+    min-height:180px;
+    max-height:500px;
+    width:100%;
+    float:left;
+    list-style:none;
+    border-left-width:1px;
+    border-left-style:solid;
+    padding-top:15px;
+    padding-left:10px;
+}
+.logo{
+    border-radius:25px;
+    float:left;
+}
+.year{
+    /*color:#1DB702;*/
+    cursor:pointer;
+}
+
+
+.circle{
+    width:13px;
+    height:13px;
+    background-color:white;
+    border-radius:10px;
+    border-width:3px;
+    border-style:solid;
+    position: absolute;
+    margin-left: -17px;
+    margin-top: -24px;
+}
+
+.date{
+    position: absolute;
+    margin-top: -23px;
+    margin-left: -100px;
+    font-size: 8pt;
+    background-color: white;
+    font-weight: 600;
+    height: 60px;
+    width: 80px;
+    word-break: break-word;
+}
+
+.link{
+    margin-right:10px;
+}
+.tags{
+    word-break:break-all;
+}
+
+.tag{
+    min-width:20px;
+    max-width:200px;
+    height:30px;
+    margin:5px 10px 5px 10px;
+    padding:2px 5px 2px 5px;
+    border-radius:3px;
+    background-color:silver;
+    cursor:pointer;
+    float:left;
+}
+/*colorpanle*/
+.colorpanle {
+    width:100%;
+    height:40px;
+    margin-bottom:50px;
+}
+.colorpanle div{
+    width:40px;
+    height:40px;
+    float:left;
+    cursor:pointer;
+}
+.arrow-up {
+    width: 0px;
+    height: 0px;
+    border-left: 20px solid transparent; /* left arrow slant */
+    border-right: 20px solid transparent; /* right arrow slant */
+    border-bottom: 30px solid #2f2f2f; /* bottom, add background color here */
+    font-size: 0px;
+    line-height: 0px;
+}
+
+/*for IE8,IE7,IE6*/
+.no-script {
+    margin-top:100px;
+}
+.qrcode-website-msg {
+    max-width:1070px;
+    margin:auto auto;
+}
+.qrcode-website-err {
+    color:red;
+}
+.qrcode-website-bg {
+    width:300px;
+    margin:auto auto;
+}
+
+/*info*/
+.company{
+    margin-bottom:50px;
+}
+
+.language span{
+    margin:auto 10px auto auto;
+}
+
+
+/*.slide-up {
+    -webkit-animation: myfirst 5s;
+}
+
+@-webkit-keyframes myfirst
+{
+    0% {
+        height: 90%;
+    }
+
+    25% {
+        height: 75%;
+    }
+
+    50% {
+        height: 35%;
+    }
+
+    100% {
+        height: 0%;
+    }
+}*/

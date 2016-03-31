@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html ng-app="timelineApp" ng-controller="timelineController" class="ng-cloak">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>简历</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="{{timeline.meta.description}}" />
+    <meta name="keywords" content="{{timeline.meta.keywords}}" />
+    <link href="common/lib/bootstrap-3.3.4-dist/bootstrap-theme.css" rel="stylesheet" />
+    <link href="common/lib/bootstrap-3.3.4-dist/bootstrap.css" rel="stylesheet" />
+    <link href="css/bsmodule.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="blog-masthead" ng-style="{'background-color':linecolor}">
+        <div class="container">
+            <nav class="blog-nav">
+                <a class="blog-nav-item" href="http://blog.99diary.com">博客</a>
+                <a class="blog-nav-item active" href="#">简历</a>
+                <a class="blog-nav-item" href="http://blog.99diary.com/about/skill/">关于我</a>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="blog-header">
+            <h1 class="blog-title">简历</h1>
+            <p class="lead blog-description">这里仅仅是一些项目经历</p>
+        </div>
+
+        <div class="colorpanle">
+            <h5 ng-style="{'color':linecolor}">切换主题：</h5>
+            <div ng-repeat="color in colors" title="{{color.value}}" ng-style="{'background-color':color.key}" ng-click="change_theme(color)"></div>
+        </div>
+        <hr />
+        <div>
+            <h5 ng-style="{'color':linecolor}">个人信息</h5>
+            <p>性别：{{timeline.info.sex}}</p>
+            <p>年龄：{{timeline.info.year}}</p>
+            <p>工作经验：{{timeline.info.experience}}</p>
+        </div>
+        <hr/>
+        <div>
+            <h5 ng-style="{'color':linecolor}">求职意向</h5>
+            <p>关键词：{{timeline.info.keywords}}</p>
+            <p>地点：{{timeline.info.location}}</p>
+            <p>行业：{{timeline.info.industry}}</p>
+            <p>技能：{{timeline.info.job}}</p>
+            <p>工作类型：{{timeline.info.jobtype}}</p>
+            <p>期望薪资：{{timeline.info.price}}</p>
+            <p>联系邮箱：{{timeline.info.email}}</p>
+            <p>联系电话：{{timeline.info.phone}}</p>
+            <div>
+                <p>自我评价：</p>
+                <p ng-repeat="introduction in timeline.info.introductions">{{introduction.description}}</p>
+            </div>
+        </div>
+        <hr />
+        <div>
+            <h5 ng-style="{'color':linecolor}">教育经历</h5>
+            <div ng-repeat="education in timeline.info.educations">
+                <p>{{education.date}}&nbsp;&nbsp;{{education.school}}&nbsp;&nbsp;{{education.major}}--{{education.level}}</p>
+                <p>{{education.description}}</p>
+            </div>
+        </div>
+        <hr />
+        <div>
+            <h5 ng-style="{'color':linecolor}">培训经历</h5>
+            <div ng-repeat="training in timeline.info.trainings">
+                <p>{{training.title}}</p>
+                <p>{{training.description}}</p>
+            </div>
+        </div>
+        <hr />
+        <div>
+            <h5 ng-style="{'color':linecolor}">工作经验</h5>
+            <div class="company" ng-repeat="company in timeline.info.companys">
+                <p>{{company.date}}&nbsp;&nbsp;{{company.name}}&nbsp;&nbsp;{{company.people}}</p>
+                <p>职位名称：{{company.job}}</p>
+                <p>行业：{{company.industry}}</p>
+                <p>工作描述：{{company.description}}</p>
+                <p>工作类型：{{company.type}}</p>
+            </div>
+        </div>
+        <hr />
+
+        <div>
+            <h5 ng-style="{'color':linecolor}">语言能力</h5>
+            <div class="language" ng-repeat="language in timeline.info.languages">
+                <p>{{language.name}}</p>
+                <span ng-repeat="content in language.contents">{{content.description}}</span>
+            </div>
+        </div>
+        <hr />
+
+        <div>
+            <h5 ng-style="{'color':linecolor}">工作项目经历</h5>
+            <div class="hidden">
+                <input type="text" ng-model="keyword" /><button ng-click="search_tag()">检索</button>
+            </div>
+            
+            <div class="row">
+
+                <div class="col-sm-12 blog-main">
+
+                    <div class="blog-post">
+                        <!--<h2 class="blog-post-title">Another blog post</h2>
+                    <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+
+                    <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>-->
+
+                        <div ng-repeat="project in projects_tmp track by $index">
+                            <p class="year" ng-style="{'color':linecolor}" ng-click="slideline(project)">{{project.time}}</p>
+                            <p class="pline" ng-class="project.status?'':'hidden'">
+                                <ul class="line">
+                                    <li class="project" ng-style="{'border-color':linecolor}" ng-repeat="history in project.historys">
+                                        <h4>{{history.title}}</h4>
+                                        <div class="circle" ng-style="{'border-color':linecolor}"></div>
+                                        <!--<img class="circle" src="img/circle.gif" />-->
+                                        <h6 class="date" ng-style="{'color':linecolor}">{{history.date}}</h6>
+                                        <h6 ng-if="history.description.length>0">{{history.description}}</h6>
+                                        <h6 ng-if="history.envir.length>0">开发环境:{{history.envir}}</h6>
+                                        <h6 ng-if="history.urls.length>0">
+                                            访问地址:
+                                            <a class="link" ng-style="{'color':linecolor}" href="http://bdbaifr1.22web.org/r.php?r={{url.url}}" ng-repeat="url in history.urls" target="_blank">地址{{url.id+1}}</a>
+                                            <!--<span class="link" ng-repeat="url in history.urls" ng-click="open_link(url)">地址{{url.id+1}}</span>-->
+                                        </h6>
+                                        <h6 ng-if="history.module.length>0">负责：{{history.module}}</h6>
+                                        <div class="tags" ng-if="history.stacks.length>0">
+                                            <div class="tag" ng-repeat="stack in history.stacks">{{stack.description}}</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!--<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+                    <div class="sidebar-module sidebar-module-inset">
+                        <h4>About</h4>
+                        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                    </div>
+                    <div class="sidebar-module">
+                        <h4>Archives</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="#">March 2014</a></li>
+                            <li><a href="#">February 2014</a></li>
+                            <li><a href="#">January 2014</a></li>
+                            <li><a href="#">December 2013</a></li>
+                            <li><a href="#">November 2013</a></li>
+                            <li><a href="#">October 2013</a></li>
+                            <li><a href="#">September 2013</a></li>
+                            <li><a href="#">August 2013</a></li>
+                            <li><a href="#">July 2013</a></li>
+                            <li><a href="#">June 2013</a></li>
+                            <li><a href="#">May 2013</a></li>
+                            <li><a href="#">April 2013</a></li>
+                        </ol>
+                    </div>
+                    <div class="sidebar-module">
+                        <h4>Elsewhere</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                        </ol>
+                    </div>
+                </div>-->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<!--[if lt IE 8.5]>
+    <div class="no-script">
+    <div class="qrcode-website-bg">
+        <h4>哥们，您的浏览器太古老了，该升级了 ~</h4>
+    </div>
+    <div class="qrcode-website-bg">
+        <img src="img/qrcode-website.png" />
+    </div>
+    <div class="qrcode-website-bg">
+        你也可以使用手机浏览器扫一扫打开我的简历。
+    </div>
+</div>
+<![endif]-->
+
+
+<script src="common/lib/angular.min.js"></script>
+<script src="common/lib/jquery-1.11.2.min.js"></script>
+<script src="common/lib/bootstrap-3.3.4-dist/bootstrap.min.js"></script>
+<script src="js/timeline.js"></script>
+
+</html>
