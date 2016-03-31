@@ -106,8 +106,11 @@ timelineApp.controller("timelineController", function ($scope) {
                 {
                     id: 10,
                     description: "其他：写过D3JS，改过ASP，python代码，看过dephin，学过C++游戏开发(还做过一个简单的小游戏，不过已经忘记)"
+                },
+                {
+                    id: 11,
+                    description: "外包公司请勿打扰，谢谢理解！"
                 }
-
             ],
             keywords: "Web开发 AngularJS ASP.NET C# HTML CSS SQL Oracle 互联网 电子商务",
             location: "上海",
