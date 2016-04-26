@@ -44,6 +44,11 @@
 >2.支持IE8及其以下版本二维码提醒(目前需要设定，预计划会更改为JQuery生成);
 ```
 
+###Tools
+
+Build by Visual Studio Community 2015
+
+
 ###License
 
 Code in the JJResume project is licensed under the Apache License.
