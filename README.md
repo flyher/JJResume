@@ -3,7 +3,7 @@
 #
 [demo](http://resume.99diary.com)
 
-######功能需求
+###功能需求
 
 - [x] 基本对象绑定
 
@@ -17,7 +17,9 @@
 
 - [ ] 导出文档
 
-######浏览器支持
+- [ ] 统计报表
+
+###浏览器支持
 
 | Browser | Support
 | ---- |:-----
@@ -28,7 +30,7 @@
 | Opera 12+ | 是 
 | 微信 | 是
 
-######更新日志
+###更新日志
 
 ```text
 2016-04-08
@@ -42,3 +44,6 @@
 >2.支持IE8及其以下版本二维码提醒(目前需要设定，预计划会更改为JQuery生成);
 ```
 
+###License
+
+Code in the BlogBackup163 project is licensed under the Apache License.
