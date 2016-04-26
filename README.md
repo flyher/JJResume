@@ -46,4 +46,4 @@
 
 ###License
 
-Code in the BlogBackup163 project is licensed under the Apache License.
+Code in the JJResume project is licensed under the Apache License.
