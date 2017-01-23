@@ -51,4 +51,4 @@ Build by Visual Studio Community 2015
 
 ###License
 
-Code in the JJResume project is licensed under the Apache License.
+Code in the JJResume project is licensed under the GPL.
