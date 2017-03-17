@@ -58,11 +58,11 @@ todo 20170317
 >2.支持IE8及其以下版本二维码提醒(目前需要设定，预计划会更改为JQuery生成);
 ```
 
-###Tools
+### Tools
 
-Build by Visual Studio Community 2015
+~~Build by Visual Studio Community 2015~~
+Build by Visual Studio Code
 
-
-###License
+### License
 
 Code in the Totoro project is licensed under the GPL.
