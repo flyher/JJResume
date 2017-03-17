@@ -1,5 +1,5 @@
-# totoro
-一个基于AngularJS+Bootstrap的简历模板
+# Totoro
+一个基于Angular1+Bootstrap的简历模板
 #
 [demo](http://resume.99diary.com)
 
@@ -65,4 +65,4 @@ Build by Visual Studio Community 2015
 
 ###License
 
-Code in the JJResume project is licensed under the GPL.
+Code in the Totoro project is licensed under the GPL.
