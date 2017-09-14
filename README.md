@@ -1,5 +1,5 @@
 # Totoro
-A resume base on Angular1 and Bootstrap.
+A resume base on AngularJS, TypeScript & WebPack.
 #
 [demo](https://resume.99diary.com)
 
@@ -59,6 +59,11 @@ todo
 >1.Custom object;
 >2.Show QR code in IE8 and below (need set yourself, i will change to JQuery create);
 ```
+
+### Describe
+
+[angular-typescript-webpack](https://github.com/evan-carey/angular-typescript-webpack)
+
 
 ### Tools
 
