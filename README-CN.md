@@ -1,5 +1,5 @@
 # Totoro
-一个基于Angular1.5中组件，TypeScript, Bootstrap, TypeScript 和 WebPack的简历模板
+一个基于Angular2+中组件，TypeScript, Bootstrap, TypeScript 和 WebPack的简历模板
 #
 [demo](http://resume.99diary.com)
 
@@ -39,10 +39,13 @@
 ### 更新日志
 
 ```text
-2017-09-21
-Angular 1.5
+2017-09-25
+Angular 2/4 重写
 
-beta version for test
+
+2017-09-21
+Angular 1.5 尝试代码
+
 
 todo 20170317
 >1.分离页头页尾模板;
@@ -64,7 +67,9 @@ todo 20170317
 ```
 ### webpack config 
 
-[Angular 1.5 Components constructor cannot be an abstract](https://github.com/DefinitelyTyped/DefinitelyTyped/issues/11541)
+[Angular CLI](https://github.com/angular/angular-cli)
+
+[import bootstrap](https://github.com/AngularClass/angular-starter/issues/696)
 
 ### Tools
 

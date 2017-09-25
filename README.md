@@ -1,5 +1,5 @@
 # Totoro
-A resume base on AngularJS 1.5 component, Bootstrap, TypeScript & WebPack.
+A resume base on AngularJS 2+ component, Bootstrap, TypeScript & WebPack.
 #
 [demo](https://resume.99diary.com)
 
@@ -41,6 +41,10 @@ A resume base on AngularJS 1.5 component, Bootstrap, TypeScript & WebPack.
 ### update log
 
 ```text
+2017-09-25
+rewrite by Angular 2/4
+
+
 2017-09-21
 Angular 1.5
 
@@ -72,7 +76,10 @@ todo
 
 ### Describe
 
-[angular-typescript-webpack](https://github.com/evan-carey/angular-typescript-webpack)
+
+[Angular CLI](https://github.com/angular/angular-cli)
+
+[import bootstrap](https://github.com/AngularClass/angular-starter/issues/696)
 
 
 ### Tools
