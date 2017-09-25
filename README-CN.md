@@ -39,6 +39,11 @@
 ### 更新日志
 
 ```text
+2017-09-21
+Angular 1.5
+
+beta version for test
+
 todo 20170317
 >1.分离页头页尾模板;
 >2.gulp重写;
@@ -57,6 +62,9 @@ todo 20170317
 >1.自定义对象;
 >2.支持IE8及其以下版本二维码提醒(目前需要设定，预计划会更改为JQuery生成);
 ```
+### webpack config 
+
+[Angular 1.5 Components constructor cannot be an abstract](https://github.com/DefinitelyTyped/DefinitelyTyped/issues/11541)
 
 ### Tools
 

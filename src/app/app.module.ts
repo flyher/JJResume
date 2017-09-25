@@ -8,13 +8,10 @@ import { moduleName as coreModule } from './core/core.module';
 import { moduleName as contactsModule } from './contacts/contacts.module';
 // import { TaskModule } from './task/task.module';
 
+import { BaseHeader } from './base/base-header';
 export const moduleName =
     angular.module('application', [
         coreModule,
         contactsModule
     ])
         .name;
-
-// angular.module('application', [
-//     TaskModule.name
-// ]);
