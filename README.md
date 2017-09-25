@@ -1,5 +1,5 @@
 # Totoro
-A resume base on Angular1 and Bootstrap.
+A resume base on AngularJS 1.5 component, Bootstrap, TypeScript & WebPack.
 #
 [demo](https://resume.99diary.com)
 
@@ -41,6 +41,11 @@ A resume base on Angular1 and Bootstrap.
 ### update log
 
 ```text
+2017-09-21
+Angular 1.5
+
+beta version for test
+
 todo
 >1.separate the template for header and footer;
 >2.gulp support;
@@ -59,6 +64,16 @@ todo
 >1.Custom object;
 >2.Show QR code in IE8 and below (need set yourself, i will change to JQuery create);
 ```
+
+### webpack config 
+
+[Angular 1.5 Components constructor cannot be an abstract](https://github.com/DefinitelyTyped/DefinitelyTyped/issues/11541)
+
+
+### Describe
+
+[angular-typescript-webpack](https://github.com/evan-carey/angular-typescript-webpack)
+
 
 ### Tools
 
