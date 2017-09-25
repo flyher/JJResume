@@ -1,5 +1,5 @@
 # Totoro
-一个基于Angular1+Bootstrap的简历模板
+一个基于Angular1.5中组件，TypeScript, Bootstrap, TypeScript 和 WebPack的简历模板
 #
 [demo](http://resume.99diary.com)
 

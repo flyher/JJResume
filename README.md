@@ -1,5 +1,5 @@
 # Totoro
-A resume base on AngularJS, TypeScript & WebPack.
+A resume base on AngularJS 1.5 component, Bootstrap, TypeScript & WebPack.
 #
 [demo](https://resume.99diary.com)
 
