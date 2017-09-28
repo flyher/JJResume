@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Links, Header } from '../../model/header.model';
+import './friend-link.component.less';
 
 const HEADER: Header = {
   id: 1,
@@ -43,7 +44,8 @@ const HEADER: Header = {
 @Component({
   selector: 'component-friend-link',
   templateUrl: './friend-link.component.html',
-  styleUrls: ['./friend-link.less']
+  // styleUrls: ['./friend-link.component.less'] //https://github.com/angular/angular-cli/issues/7245
+  // styleUrls: ['./friend-link.component.css']
 })
 export class FriendLinkComponent {
   header = HEADER;

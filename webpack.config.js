@@ -61,7 +61,8 @@ const postcssPlugins = function () {
 const globalCss = [
   // path.join(process.cwd(), "node_modules\\bootstrap\\dist\\css\\bootstrap.css"),
   path.join(process.cwd(), "./src/global/styles.less"),
-  path.join(process.cwd(), "src\\styles.css")
+  path.join(process.cwd(), "src\\styles.css"),
+  path.join(process.cwd(), "./src/components/friend-link/friend-link.component.less")
 ];
 
 module.exports = {
@@ -156,6 +157,10 @@ module.exports = {
           }
         ]
       },
+      // {
+      //   test: /\.scss$/,
+      //   use: ['raw-loader', 'sass-loader']
+      // },
       {
         "exclude": globalCss,
         "test": /\.scss$|\.sass$/,

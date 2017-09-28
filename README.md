@@ -76,10 +76,11 @@ todo
 
 ### Describe
 
-
 [Angular CLI](https://github.com/angular/angular-cli)
 
 [import bootstrap](https://github.com/AngularClass/angular-starter/issues/696)
+
+[Expected 'styles' to be an array of strings](https://github.com/angular/angular-cli/issues/7245)
 
 
 ### Tools
