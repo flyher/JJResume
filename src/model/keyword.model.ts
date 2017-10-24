@@ -1,5 +1,5 @@
 export class Keyword {
-  ID: number;
-  Key: string;
-  Value: string;
+  id: number;
+  key: string;
+  value: string;
 }

@@ -71,6 +71,7 @@
     "copy-webpack-plugin": "^4.0.1",
     "jquery": "^3.2.1",
     "bootstrap": "^4.0.0-beta",
-    "popper.js": "^1.12.6"
+    "popper.js": "^1.12.6",
+    "font-awesome": "^4.7.0"
   }
 }

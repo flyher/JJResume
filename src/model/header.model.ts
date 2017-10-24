@@ -9,5 +9,5 @@ export class Header {
   id: number;
   title: string;
   logo: string;
-  friendlinks: Array<Links>;
+  friendLinks: Array<Links>;
 }

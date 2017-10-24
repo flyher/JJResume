@@ -6,7 +6,7 @@ const HEADER: Header = {
   id: 1,
   title: 'Test Page',
   logo: './',
-  friendlinks: [
+  friendLinks: [
     {
       id: 1,
       key: 'home',

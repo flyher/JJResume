@@ -63,7 +63,9 @@ const postcssPlugins = function () {
 const globalCss = [
   // path.join(process.cwd(), "node_modules\\bootstrap\\dist\\css\\bootstrap.css"),
   path.join(process.cwd(), "./src/global/styles.less"),
-  path.join(process.cwd(), "src\\styles.css"),
+  // path.join(process.cwd(), "src\\styles.css"),
+  // path.join(process.cwd(), "./node_modules/bootstrap/dist/css/bootstrap.css"),
+  // path.join(process.cwd(), "./node_modules/font-awesome/css/font-awesome.css"),
   path.join(process.cwd(), "./src/components/friend-link/friend-link.component.less")
 ];
 
@@ -86,23 +88,26 @@ module.exports = {
     ]
   },
   "entry": {
-    // "scripts": [
-    //   "./node_modules/jquery/dist/jquery.js",
-    //   "./src/global/lib/bootstrap-4.0.0-beta.2-dist/js/bootstrap.js"
-    // ],
+    "scripts": [
+      // "./node_modules/jquery/dist/jquery.js",
+      // "./src/global/lib/bootstrap-4.0.0-beta.2-dist/js/bootstrap.js"
+      "./node_modules/jquery/dist/jquery.slim.js",
+      "./node_modules/popper.js/dist/umd/popper.js",
+      "./node_modules/bootstrap/dist/js/bootstrap.js"
+    ],
     "main": [
       "./src\\main.ts"
     ],
     "polyfills": [
       "./src\\polyfills.ts"
     ],
-    "scripts": [
-      // "./node_modules/jquery/dist/jquery.js",
-      // "./src/global/lib/bootstrap-4.0.0-beta.2-dist/js/bootstrap.js",
-      "./node_modules/jquery/dist/jquery.slim.js",
-      "./node_modules/popper.js/dist/umd/popper.js",
-      "./node_modules/bootstrap/dist/js/bootstrap.js"
-    ],
+    // "scripts": [
+    //   // "./node_modules/jquery/dist/jquery.js",
+    //   // "./src/global/lib/bootstrap-4.0.0-beta.2-dist/js/bootstrap.js",
+    //   "./node_modules/jquery/dist/jquery.slim.js",
+    //   "./node_modules/popper.js/dist/umd/popper.js",
+    //   "./node_modules/bootstrap/dist/js/bootstrap.js"
+    // ],
 
     // "vendor": [
     //   "./src/vendor.ts"
@@ -112,12 +117,15 @@ module.exports = {
     // ],
     "styles": [
       "./src/global/styles.less",
+      // "./node_modules/bootstrap/dist/css/bootstrap.css",
+      // "./node_modules/font-awesome/css/font-awesome.css"
+
       // "./src\\styles.css",
       // "./node_modules/bootstrap/dist/css/bootstrap-theme.css",
       // "./node_modules/bootstrap/dist/css/bootstrap.css",
       // "./src/global/css/blog.css"
       // "./node_modules\\bootstrap\\dist\\css\\bootstrap.css",
-      "./src\\styles.css"
+      // "./src\\styles.css"
     ]
   },
   "output": {
