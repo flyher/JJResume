@@ -58,6 +58,8 @@ const postcssPlugins = function () {
 // import bootstrap
 // https://github.com/angular/angular-cli/wiki/stories-include-bootstrap
 // https://github.com/AngularClass/angular-starter/issues/696
+// import less
+// https://github.com/angular/angular-cli/issues/7245
 const globalCss = [
   // path.join(process.cwd(), "node_modules\\bootstrap\\dist\\css\\bootstrap.css"),
   path.join(process.cwd(), "./src/global/styles.less"),
@@ -85,7 +87,8 @@ module.exports = {
   },
   "entry": {
     // "scripts": [
-    //   "./node_modules/jquery/dist/jquery.min.js"
+    //   "./node_modules/jquery/dist/jquery.js",
+    //   "./src/global/lib/bootstrap-4.0.0-beta.2-dist/js/bootstrap.js"
     // ],
     "main": [
       "./src\\main.ts"
@@ -93,6 +96,14 @@ module.exports = {
     "polyfills": [
       "./src\\polyfills.ts"
     ],
+    "scripts": [
+      // "./node_modules/jquery/dist/jquery.js",
+      // "./src/global/lib/bootstrap-4.0.0-beta.2-dist/js/bootstrap.js",
+      "./node_modules/jquery/dist/jquery.slim.js",
+      "./node_modules/popper.js/dist/umd/popper.js",
+      "./node_modules/bootstrap/dist/js/bootstrap.js"
+    ],
+
     // "vendor": [
     //   "./src/vendor.ts"
     // ],
@@ -120,6 +131,7 @@ module.exports = {
         "enforce": "pre",
         "test": /\.js$/,
         "loader": "source-map-loader",
+        // "loader": "eslint-loader",
         "exclude": [
           /(\\|\/)node_modules(\\|\/)/
         ]

@@ -85,7 +85,6 @@ todo
 
 ### Tools
 
-~~Build by Visual Studio Community 2015~~
 Build by Visual Studio Code
 
 ### License
