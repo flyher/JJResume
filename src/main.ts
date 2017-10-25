@@ -6,6 +6,9 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { MainModule } from './main.module';
 import { environment } from './environments/environment';
 
+// import { TaskListModule } from './components/task-list/task-list.module';
+
+
 if (environment.production) {
   enableProdMode();
 }
