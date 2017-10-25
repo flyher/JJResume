@@ -1,6 +1,10 @@
+// core
 import { Component } from '@angular/core';
+// model
 import { Task } from '../../model/task.model';
 import { Language } from '../../model/enum.model';
+
+
 
 const TASK: Task = {
   id: 1,
@@ -31,7 +35,7 @@ const TASK: Task = {
 }
 
 @Component({
-  selector: 'component-task',
+  selector: 'app-task',
   templateUrl: './task.component.html',
   styleUrls: ['./task.component.less']
 })
