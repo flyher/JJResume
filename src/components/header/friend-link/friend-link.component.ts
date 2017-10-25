@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Links, Header } from '../../model/header.model';
+import { Links, Header } from '../../../model/header.model';
 import './friend-link.component.less';
 
 const HEADER: Header = {

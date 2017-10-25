@@ -1,8 +1,8 @@
 // core
 import { Component } from '@angular/core';
 // model
-import { Task } from '../../model/task.model';
-import { Language } from '../../model/enum.model';
+import { Task } from '../../../../model/task.model';
+import { Language } from '../../../../model/enum.model';
 
 
 

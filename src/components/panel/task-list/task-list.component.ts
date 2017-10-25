@@ -1,7 +1,7 @@
 // core
 import { Component } from '@angular/core';
 // model
-import { Language } from '../../model/enum.model';
+import { Language } from '../../../model/enum.model';
 // service
 // import { TaskListService } from './task-list.service';
 
