@@ -82,6 +82,9 @@ todo
 
 [Expected 'styles' to be an array of strings](https://github.com/angular/angular-cli/issues/7245)
 
+[Angular2 RC6: '<component> is not a known element'](https://stackoverflow.com/questions/39333739/angular2-rc6-component-is-not-a-known-element)
+
+[How to import component into another root component in Angular 2](https://stackoverflow.com/questions/39410417/how-to-import-component-into-another-root-component-in-angular-2)
 
 ### Tools
 
