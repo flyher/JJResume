@@ -14,7 +14,8 @@ import { ProfileComponent } from './components/panel/profile/profile.component';
 import { TaskComponent } from './components/panel/task-list/task/task.component';
 import { TaskListComponent } from './components/panel/task-list/task-list.component';
 
-
+// service
+import { ProfileService } from './components/panel/service/profile.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,9 @@ import { TaskListComponent } from './components/panel/task-list/task-list.compon
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    ProfileService
+  ],
   bootstrap: [
     // // AppComponent,
     // 引入需要在index中显示的组件,不需要的话

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProfileService } from '../service/profile.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
 })
 
 export class ProfileComponent {
+  // Inject the ProfileService
+  // https://angular.io/tutorial/toh-pt4
+  // https://angular.cn/tutorial/toh-pt4
+  constructor(private profileService: ProfileService) {
+  }
 
+  
 }
