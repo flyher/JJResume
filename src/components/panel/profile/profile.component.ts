@@ -11,8 +11,6 @@ export class ProfileComponent {
   // Inject the ProfileService
   // https://angular.io/tutorial/toh-pt4
   // https://angular.cn/tutorial/toh-pt4
-  constructor(private profileService: ProfileService) {
+  constructor(private profileService: ProfileService, private http: Http) {
   }
-
-  
 }

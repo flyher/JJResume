@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-
-import { TimeLineJSON } from '../../../mock/timeline.json';
-
+import { Http } from '@angular/http';
+import { TimeLineJSON } from '../../../mock/timeline';
+// https://angular.cn/tutorial/toh-pt6
+let timeLineJSON = new TimeLineJSON();
 @Injectable()
 export class ProfileService {
-  getProfile(): void {
-    
+  constructor(private http: Http){};
+  getProfile(): string {
+    return timeLineJSON.getPersonInfo(true);
   };
-  testProfile(): void { };
 }
