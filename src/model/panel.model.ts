@@ -1,16 +1,8 @@
-/**
- * profile
- */
-export class Profile {
-  logo: string;
-  name: string;
-  job: string;
-  graduate: string;
-  location: string;
-  experience: string;
-}
+import { Theme } from "./theme.model";
 
-export class Person {
-  id: Number;
-  profile: Profile;
+/**
+ * panel for page
+ */
+export class Panel {
+  theme: Theme;
 }

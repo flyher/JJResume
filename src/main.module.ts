@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, enableProdMode } from '@angular/core';
+import { Http, HttpModule } from '@angular/http';
 
 // import { AppComponent } from './app/app.component';
 import { bootstrap } from 'bootstrap';
@@ -14,8 +15,12 @@ import { ProfileComponent } from './components/panel/profile/profile.component';
 import { TaskComponent } from './components/panel/task-list/task/task.component';
 import { TaskListComponent } from './components/panel/task-list/task-list.component';
 
+import { ThemeComponent } from './components/panel/theme/theme.component';
 // service
 import { ProfileService } from './components/panel/service/profile.service';
+import { ThemeService } from './components/panel/service/theme.service';
+
+enableProdMode();
 
 @NgModule({
   declarations: [
@@ -26,18 +31,15 @@ import { ProfileService } from './components/panel/service/profile.service';
     FriendLinkComponent,
     FooterComponent,
     ProfileComponent,
+    ThemeComponent,
 
     TaskComponent,
     TaskListComponent,
 
     PanelComponent
   ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [
-    ProfileService
-  ],
+  imports: [BrowserModule, HttpModule],
+  providers: [ProfileService, ThemeService],
   bootstrap: [
     // // AppComponent,
     // 引入需要在index中显示的组件,不需要的话
@@ -46,4 +48,4 @@ import { ProfileService } from './components/panel/service/profile.service';
     PanelComponent
   ]
 })
-export class MainModule { }
+export class MainModule {}

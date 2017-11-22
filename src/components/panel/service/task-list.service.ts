@@ -5,4 +5,7 @@ export class TaskListService {
   showList(): void {
     console.log('show list');
   }
+  taskDetail(): void {
+    console.log('show detail')
+  }
 }

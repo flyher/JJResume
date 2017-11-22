@@ -1,35 +1,23 @@
 import { Language } from './enum.model';
+import { Stack } from './stack.model';
+import { Url } from './url.model';
 /**
- * tag
+ * task  history=>task
  */
-export class Tag {
-  id: number;
-  key: Language;
-  value: Language;
-}
-/**
- * url
- */
-export class Url {
-  id: number;
-  key: string;
-  value: string;
-}
-/**
- * project
- */
-export class Project {
-  name: string;
-  urls: Array<Url>;
-  describe: string;
-  tags: Array<Tag>;
-}
-/**
- * task
- */
+// export class Task {
+//   id: number;
+//   date: string;
+//   project: Project;
+// }
 export class Task {
-  id: number;
   date: string;
-  project: Project;
+  title: string;
+  envir: string;
+  stacks: Array<Stack>;
+  module: string;
+  describe: string;
+  urls: Array<Url>;
+  version: number;
+  logo: string;
+  enable: boolean;
 }
-

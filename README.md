@@ -86,6 +86,10 @@ todo
 
 [How to import component into another root component in Angular 2](https://stackoverflow.com/questions/39410417/how-to-import-component-into-another-root-component-in-angular-2)
 
+
+[Error: Can't resolve '@angular/core/src/metadata/directives'](https://github.com/angular/angular/issues/15679)
+
+
 ### Tools
 
 Build by Visual Studio Code
