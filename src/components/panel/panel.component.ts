@@ -8,7 +8,11 @@ import { Theme } from '../../model/theme.model';
   styleUrls: ['./panel.component.less']
 })
 export class PanelComponent {
-  panel: Panel;
+  panel: Panel = new Panel();
+
+  constructor() {}
+
+  ngOnInit(): void {}
 
   onChangeColor(item: Theme) {
     this.panel.theme = item;

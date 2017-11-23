@@ -22,7 +22,7 @@ export class ProfileComponent implements OnInit {
 
   getProfile(): void {
     this.profileService.getProfile().then(profile => {
-      // this.profile = profile;
+      this.profile = profile;
       console.log(profile);
     });
   }

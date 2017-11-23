@@ -31,8 +31,5 @@ export class ThemeComponent implements OnInit {
 
   changeColor(item: Theme) {
     this.onChangeColor.emit(item);
-    // this.panel.theme = item;
-    // console.log(item);
-    console.log(this.panel);
   }
 }
