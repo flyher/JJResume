@@ -16,9 +16,8 @@ import { Color } from '../../../model/color.model';
 export class ThemeComponent implements OnInit {
   @Input() panel: Panel;
   @Output() onChangeColor = new EventEmitter<Color>();
-  theme: Theme;
-  // colors: Array<Color>;
-  // topic: string;
+  theme: Theme = new Theme();
+  // color: Color=new Color();
 
   constructor(private themeService: ThemeService, private http: Http) {}
 
@@ -33,6 +32,7 @@ export class ThemeComponent implements OnInit {
   }
 
   changeColor(item: Color) {
+    // this.color = item;
     this.onChangeColor.emit(item);
   }
 }

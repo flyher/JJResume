@@ -9,7 +9,13 @@ import { Color } from '../../model/color.model';
   styleUrls: ['./panel.component.less']
 })
 export class PanelComponent {
-  panel: Panel = new Panel();
+  panel: Panel = {
+    color: {
+      id: 0,
+      key: 'silver',
+      value: 'silver'
+    } as Color
+  } as Panel;
 
   constructor() {}
 

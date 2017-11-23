@@ -1,8 +1,8 @@
 <div class="theme">
-  <h5 ng-style="{'color':linecolor}">{{theme.topic}}</h5>
+  <h5 [ngStyle]="{'color': panel.color.key}">{{theme.topic}}</h5>
   <ul class="colors">
     <li *ngFor="let item of theme.colors" [ngStyle]="{'background-color': item.key}" title="{{item.value}}" (click)="changeColor(item)">
-      {{item.value}}
+      <!-- {{item.value}} -->
     </li>
   </ul>
 </div>
