@@ -65,17 +65,36 @@ todo 20170317
 >1.自定义对象;
 >2.支持IE8及其以下版本二维码提醒(目前需要设定，预计划会更改为JQuery生成);
 ```
-### webpack config 
+
+### 参考资料
+
+Angular1.5
+
+[Angular 1.5 Components constructor cannot be an abstract](https://github.com/DefinitelyTyped/DefinitelyTyped/issues/11541)
+
+
+Angular2+
 
 [Angular CLI](https://github.com/angular/angular-cli)
 
 [import bootstrap](https://github.com/AngularClass/angular-starter/issues/696)
 
-### Tools
+[Expected 'styles' to be an array of strings](https://github.com/angular/angular-cli/issues/7245)
+
+[Angular2 RC6: '<component> is not a known element'](https://stackoverflow.com/questions/39333739/angular2-rc6-component-is-not-a-known-element)
+
+[How to import component into another root component in Angular 2](https://stackoverflow.com/questions/39410417/how-to-import-component-into-another-root-component-in-angular-2)
+
+
+[Error: Can't resolve '@angular/core/src/metadata/directives'](https://github.com/angular/angular/issues/15679)
+
+
+### 开发工具
 
 ~~Build by Visual Studio Community 2015~~
+
 Build by Visual Studio Code
 
-### License
+### 许可证
 
 Code in the Totoro project is licensed under the GPL.

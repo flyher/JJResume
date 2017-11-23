@@ -69,12 +69,14 @@ todo
 >2.Show QR code in IE8 and below (need set yourself, i will change to JQuery create);
 ```
 
-### webpack config 
+### Describe
+
+Angular1.5
 
 [Angular 1.5 Components constructor cannot be an abstract](https://github.com/DefinitelyTyped/DefinitelyTyped/issues/11541)
 
 
-### Describe
+Angular2+
 
 [Angular CLI](https://github.com/angular/angular-cli)
 
@@ -91,6 +93,8 @@ todo
 
 
 ### Tools
+
+~~Build by Visual Studio Community 2015~~
 
 Build by Visual Studio Code
 
