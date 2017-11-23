@@ -3,7 +3,7 @@ import { Footer } from '../../model/footer.model';
 
 const FOOTER: Footer = {
   id: 1,
-  describe: 'Blog template built for Bootstrap',
+  describe: 'totoro built by Bootstrap',
   author: 'flyher'
 }
 @Component({

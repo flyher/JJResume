@@ -1,7 +1,7 @@
 <div class="theme">
-  <h5 ng-style="{'color':linecolor}">切换主题：</h5>
+  <h5 ng-style="{'color':linecolor}">{{theme.topic}}</h5>
   <ul class="colors">
-    <li *ngFor="let item of themes" [ngStyle]="{'background-color': item.key}" (click)="changeColor(item)">
+    <li *ngFor="let item of theme.colors" [ngStyle]="{'background-color': item.key}" title="{{item.value}}" (click)="changeColor(item)">
       {{item.value}}
     </li>
   </ul>

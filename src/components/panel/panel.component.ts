@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Panel } from '../../model/panel.model';
 import { Theme } from '../../model/theme.model';
+import { Color } from '../../model/color.model';
 
 @Component({
   selector: 'app-panel',
@@ -14,7 +15,7 @@ export class PanelComponent {
 
   ngOnInit(): void {}
 
-  onChangeColor(item: Theme) {
-    this.panel.theme = item;
+  onChangeColor(item: Color) {
+    this.panel.color = item;
   }
 }

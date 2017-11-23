@@ -9,11 +9,11 @@ import { Theme } from './../../../model/theme.model';
 @Injectable()
 export class ThemeService {
   constructor(private http: Http) {}
-  getTheme(): Promise<Array<Theme>> {
+  getTheme(): Promise<Theme> {
     return this.http
       .get(URL_THEME)
       .toPromise()
-      .then(response => response.json().data.colors as Array<Theme>)
+      .then(response => response.json().data as Theme)
       .catch();
   }
 }

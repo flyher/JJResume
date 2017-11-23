@@ -5,6 +5,7 @@ import { HttpModule, Http } from '@angular/http';
 import { ThemeService } from '../service/theme.service';
 import { Theme } from '../../../model/theme.model';
 import { Panel } from '../../../model/panel.model';
+import { Color } from '../../../model/color.model';
 
 @Component({
   selector: 'app-theme',
@@ -14,14 +15,16 @@ import { Panel } from '../../../model/panel.model';
 })
 export class ThemeComponent implements OnInit {
   @Input() panel: Panel;
-  @Output() onChangeColor = new EventEmitter<Theme>();
-  themes: Array<Theme>;
+  @Output() onChangeColor = new EventEmitter<Color>();
+  theme: Theme;
+  // colors: Array<Color>;
+  // topic: string;
 
   constructor(private themeService: ThemeService, private http: Http) {}
 
   getTheme(): void {
     this.themeService.getTheme().then(theme => {
-      this.themes = theme;
+      this.theme = theme;
     });
   }
 
@@ -29,7 +32,7 @@ export class ThemeComponent implements OnInit {
     this.getTheme();
   }
 
-  changeColor(item: Theme) {
+  changeColor(item: Color) {
     this.onChangeColor.emit(item);
   }
 }

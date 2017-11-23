@@ -1,8 +1,8 @@
-import { Theme } from "./theme.model";
+import { Color } from "./color.model";
 
 /**
  * panel for page
  */
 export class Panel {
-  theme: Theme;
+  color: Color;
 }

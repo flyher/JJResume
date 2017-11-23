@@ -1,8 +1,9 @@
+import { Color } from "./color.model";
+
 /**
  * theme
  */
 export class Theme {
-  id: number;
-  key: string;
-  value: string;
+  topic:string;
+  colors:Array<Color>
 }
