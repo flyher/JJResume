@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
-    'scripts/app': [path.resolve(__dirname, './src/half-find/app.ts')]
+    'scripts/app': [path.resolve(__dirname, './src/js/timeline.js')]
   },
   output: {
     path: path.join(__dirname, '/dist'),
