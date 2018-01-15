@@ -11,7 +11,9 @@
   "author": "flyher",
   "license": "GPL",
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "angular": "^1.6.8",
+    "bootstrap": "4.0.0-beta.3"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.4.1",
@@ -19,6 +21,25 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "clean-webpack-plugin": "^0.1.17",
     "copy-webpack-plugin": "^4.3.1",
-    "eslint-loader": "^1.9.0"
+    "eslint-loader": "^1.9.0",
+    "babel-loader": "^7.1.2",
+    "babel-core": "^6.26.0",
+    "eslint": "^4.15.0",
+    "eslint-plugin-react": "^7.5.1",
+    "babel-eslint": "^8.1.2",
+    "eslint-plugin-html": "^4.0.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jslint": "^0.11.0",
+    "style-loader": "^0.19.1",
+    "css-loader": "^0.28.8",
+    "postcss-loader": "^2.0.10",
+    "autoprefixer": "^7.2.4",
+    "popper.js": "^1.12.9",
+    "less-loader": "^4.0.5",
+    "less": "^2.7.3"
   }
 }

@@ -3,14 +3,21 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const autoprefixer = require('autoprefixer')
 
 module.exports = {
   entry: {
-    'scripts/app': [path.resolve(__dirname, './src/js/timeline.js')]
+    // 'script/lib': [
+    //   './src/lib/bootstrap-3.3.4-dist/bootstrap.min.js'
+    // ],
+    'script/app': [path.resolve(__dirname, './src/script/timeline.js')]
   },
   output: {
     path: path.join(__dirname, '/dist'),
-    publicPath: process.env.NODE_ENV === 'release'? '/dist/': 'http://localhost:8889/dist/',
+    publicPath:
+      process.env.NODE_ENV === 'release'
+        ? '/dist/'
+        : 'http://localhost:8889/dist/',
     filename: '[name].bundle.js'
   },
   module: {
@@ -35,13 +42,52 @@ module.exports = {
         test: /\.ts$/,
         // loader: 'ts-loader',
         loader: 'awesome-typescript-loader'
+      },
+      {
+        test: /\.css$/,
+        // use: ['style-loader', 'css-loader', 'postcss-loader']
+        loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+      },
+      // {
+      //   test: /\.scss$/,
+      //   use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+      // },
+      {
+        test: /\.less$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader']
+      },
+      {
+        test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: 'url-loader?limit=10000'
+      },
+      {
+        test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
+        use: 'file-loader'
+      },
+
+      // Use one of these to serve jQuery for Bootstrap scripts:
+
+      // Bootstrap 4
+      {
+        test: /bootstrap\/dist\/js\/umd\//,
+        use: 'imports-loader?jQuery=jquery'
+      },
+
+      // Bootstrap 3
+      {
+        test: /bootstrap-sass\/assets\/javascripts\//,
+        use: 'imports-loader?jQuery=jquery'
       }
     ]
   },
   resolve: {
-    extensions: ['.webpack.js', '.ts', '.js', 'tsx']
+    extensions: ['.webpack.js', '.ts', '.js', 'tsx', 'css']
   },
   plugins: [
+    // new ExtractTextPlugin("[name].css", {
+    //   allChunks: true
+    // }),
+    new ExtractTextPlugin("style.css"),
     // 合并文件
     // new webpack.optimize.CommonsChunkPlugin({
     //   name: ['common'],
