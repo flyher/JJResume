@@ -24,6 +24,8 @@ timelineApp.controller('timelineController', function ($scope) {
         time: '2016-01-06'
       }, {
         time: '2016-03-28 重写模板'
+      }, {
+        time: '2018-01-15 ng1版本，重写编译脚本，支持webpack打包'
       }
     ],
     meta: {
