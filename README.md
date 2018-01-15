@@ -1,6 +1,9 @@
 # Totoro
-A resume base on Angular1 and Bootstrap.
+A resume base on Angular and Bootstrap.
 #
+
+Angular1 + Bootstrap + Webpack
+
 [demo](https://resume.99diary.com)
 
 [Simplified Chinese](README-CN.md)
@@ -46,6 +49,11 @@ todo
 >2.gulp support;
 >3.add unit test code
 >4.rewrite all code
+```
+
+```text
+2018-01-15
+>1.support webpack
 ```
 
 ```text
