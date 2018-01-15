@@ -198,4 +198,4 @@ FakesAssemblies/
 
 node_modules/
 dist/
-src/script/timeline.js
+# src/script/timeline.js
