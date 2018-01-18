@@ -59,22 +59,8 @@ master the branch describe
 
 ```
 
-### webpack config 
-
-[Angular 1.5 Components constructor cannot be an abstract](https://github.com/DefinitelyTyped/DefinitelyTyped/issues/11541)
-
-
-### Describe
-
-
-[Angular CLI](https://github.com/angular/angular-cli)
-
-[import bootstrap](https://github.com/AngularClass/angular-starter/issues/696)
-
-
 ### Tools
 
-~~Build by Visual Studio Community 2015~~
 Build by Visual Studio Code
 
 ### License
