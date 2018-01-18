@@ -1,5 +1,5 @@
 # Totoro
-一个基于Angular2+中组件，TypeScript, Bootstrap, TypeScript 和 WebPack的简历模板
+一个基于Angular, Bootstrap, TypeScript 和 WebPack或者 Gulp 的简历模板
 #
 [demo](http://resume.99diary.com)
 
@@ -36,44 +36,28 @@
 | Opera 12+ | 是 
 | 微信 | 是
 
-### 更新日志
+### 版本分支
 
-```text
-2017-09-25
-Angular 2/4 重写
+```log
+dev_0.1  AngularJS 1 传统引用方式
+|
+|-dev_0.1.1 AngularJS 1 + ES6 + Less + Webpack 编译成功
+|-dev_0.1.2 AngularJS 1 + Gulp 编译成功
 
+dev_0.2 AngularJS 1.5 组件 + Typescript + Scss + Webpack 编译失败
+|
+|-dev_temp temp code
 
-2017-09-21
-Angular 1.5 尝试代码
+dev_0.3 AngularJS 2-4 组件 + Typescript + Less + Webpack 编译成功
 
+gh-pages dev_1.1.2 的发布版本，之所以用这个版本是因为目前 Webpack 打包后合并的文件会很大，而且不利于修改绑定的数据对象
 
-todo 20170317
->1.分离页头页尾模板;
->2.gulp重写;
->3.增加unit test代码
->4.重写代码
+master 分支梳理
 ```
 
-```text
-2016-04-08
->1.回归模板版本;
->2.计划增加中英切换，搜索功能;
-```
-
-```text
-2016-03-31
->1.自定义对象;
->2.支持IE8及其以下版本二维码提醒(目前需要设定，预计划会更改为JQuery生成);
-```
-### webpack config 
-
-[Angular CLI](https://github.com/angular/angular-cli)
-
-[import bootstrap](https://github.com/AngularClass/angular-starter/issues/696)
 
 ### Tools
 
-~~Build by Visual Studio Community 2015~~
 Build by Visual Studio Code
 
 ### License

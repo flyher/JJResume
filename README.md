@@ -1,5 +1,6 @@
 # Totoro
-A resume base on AngularJS 2+ component, Bootstrap, TypeScript & WebPack.
+A resume base on AngularJS, Bootstrap, TypeScript & WebPack or Gulp.
+
 #
 [demo](https://resume.99diary.com)
 
@@ -38,35 +39,24 @@ A resume base on AngularJS 2+ component, Bootstrap, TypeScript & WebPack.
 | Opera 12+ | Yes 
 | weChat | Yes
 
-### update log
+### branch
 
-```text
-2017-09-25
-rewrite by Angular 2/4
+```log
+dev_0.1  AngularJS 1 custom
+|
+|-dev_0.1.1 AngularJS 1 + ES6 + Less + Webpack - build success
+|-dev_0.1.2 AngularJS 1 + Gulp - build success
 
+dev_0.2 AngularJS 1.5 组件 + Typescript + Scss + Webpack - build fail
+|
+|-dev_temp temp code
 
-2017-09-21
-Angular 1.5
+dev_0.3 AngularJS 2-4 组件 + Typescript + Less + Webpack - build success
 
-beta version for test
+gh-pages push from branch dev_1.1.2
 
-todo
->1.separate the template for header and footer;
->2.gulp support;
->3.add unit test code
->4.rewrite all code
-```
+master the branch describe
 
-```text
-2016-04-08
->1.remove my test;
->2.todo list: support Chinese/English and keyword search;
-```
-
-```text
-2016-03-31
->1.Custom object;
->2.Show QR code in IE8 and below (need set yourself, i will change to JQuery create);
 ```
 
 ### webpack config 
