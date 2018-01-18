@@ -1,7 +1,13 @@
 # Totoro
 一个基于Angular1+Bootstrap的简历模板
 #
-[demo](http://resume.99diary.com)
+
+Angular1 + Bootstrap + Webpack
+
+branch 1->
+
+[demo](https://resume.99diary.com)
+
 
 ### 功能需求
 
@@ -44,6 +50,12 @@ todo 20170317
 >2.gulp重写;
 >3.增加unit test代码
 >4.重写代码
+```
+
+```text
+2018-01-15
+>1.支持import模式;
+>2.webpack打包
 ```
 
 ```text

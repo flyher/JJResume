@@ -53,7 +53,8 @@ todo
 
 ```text
 2018-01-15
->1.support webpack
+>1.support import;
+>2.package by webpack
 ```
 
 ```text
