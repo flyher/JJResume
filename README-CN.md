@@ -48,7 +48,7 @@ dev_0.2 AngularJS 1.5 组件 + Typescript + Scss + Webpack 编译失败
 |
 |-dev_temp temp code
 
-dev_0.3 AngularJS 2-4 组件 + Typescript + Less + Webpack 编译成功
+dev_0.3 AngularJS 2+ 组件 + Typescript + Less + Webpack 编译成功
 
 gh-pages dev_1.1.2 的发布版本，之所以用这个版本是因为目前 Webpack 打包后合并的文件会很大，而且不利于修改绑定的数据对象
 

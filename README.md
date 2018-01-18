@@ -51,7 +51,7 @@ dev_0.2 AngularJS 1.5 component + Typescript + Scss + Webpack - build fail
 |
 |-dev_temp temp code
 
-dev_0.3 AngularJS 2-4 component + Typescript + Less + Webpack - build success
+dev_0.3 AngularJS 2+ component + Typescript + Less + Webpack - build success
 
 gh-pages push from branch dev_1.1.2
 
