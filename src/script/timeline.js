@@ -4,9 +4,6 @@
 *2016-04-01 update
 *2018-01-14 update
 */
-import angular from 'angular';
-import 'bootstrap';
-import '../style/custom.less';
 var timelineApp = angular.module('timelineApp', []);
 timelineApp.controller('timelineController', function ($scope) {
   $scope.timeline = {

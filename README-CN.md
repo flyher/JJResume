@@ -2,11 +2,11 @@
 一个基于Angular1+Bootstrap的简历模板
 #
 
-Angular1 + Bootstrap + Webpack
+Angular1 + Bootstrap + Gulp
 
-branch 1->
 
 [demo](https://resume.99diary.com)
+
 
 
 ### 功能需求
@@ -53,9 +53,9 @@ todo 20170317
 ```
 
 ```text
-2018-01-15
+2018-01-18
 >1.支持import模式;
->2.webpack打包
+>2.gulp打包
 ```
 
 ```text

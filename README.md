@@ -2,7 +2,7 @@
 A resume base on Angular and Bootstrap.
 #
 
-Angular1 + Bootstrap + Webpack
+Angular1 + Bootstrap + Gulp
 
 [demo](https://resume.99diary.com)
 
@@ -52,9 +52,9 @@ todo
 ```
 
 ```text
-2018-01-15
+2018-01-18
 >1.support import;
->2.package by webpack
+>2.package by gulp
 ```
 
 ```text
