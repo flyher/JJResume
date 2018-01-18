@@ -1,5 +1,5 @@
 # Totoro
-A resume base on AngularJS, Bootstrap, TypeScript & WebPack or Gulp.
+A resume base on AngularJS, Bootstrap, Typescript, Package by Gulp and Webpack.
 
 #
 [demo](https://resume.99diary.com)
