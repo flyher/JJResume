@@ -1,5 +1,7 @@
 Angular1 + Bootstrap + Gulp
 
+[Simplified Chinese](README-CN.md)
+
 ### update log
 
 ```text
