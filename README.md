@@ -14,7 +14,6 @@ dev_0.3
 [![Build Status](https://travis-ci.org/flyher/totoro.svg?branch=dev_0.3)](https://travis-ci.org/flyher/totoro?branch=dev_0.3)
 
 
-
 [![Release Version](https://img.shields.io/github/release/flyher/totoro.svg)](https://github.com/flyher/totoro/releases)
 [![Issues](https://img.shields.io/github/issues/flyher/totoro.svg)](https://github.com/flyher/totoro/issues)
 [![Software License](https://img.shields.io/github/license/flyher/totoro.svg)](https://github.com/flyher/totoro/blob/dev_0.1.1/LICENSE)

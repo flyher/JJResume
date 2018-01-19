@@ -4,10 +4,10 @@ node_js:
 before_install: 
   - npm install
 # blocklist
-# branches:
-#   except:
-#   - legacy
-#   - experimental
+branches:
+  except:
+  - master
+  - gh-pages
 
 # safelist
 branches:
