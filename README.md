@@ -1,4 +1,24 @@
 # Totoro
+
+
+dev_0.1.1
+[![Build Status](https://travis-ci.org/flyher/totoro.svg?branch=dev_0.1.1)](https://travis-ci.org/flyher/totoro?branch=dev_0.1.1)
+
+dev_0.1.2
+[![Build Status](https://travis-ci.org/flyher/totoro.svg?branch=dev_0.1.2)](https://travis-ci.org/flyher/totoro?branch=dev_0.1.2)
+
+dev_0.2
+[![Build Status](https://travis-ci.org/flyher/totoro.svg?branch=dev_0.2)](https://travis-ci.org/flyher/totoro?branch=dev_0.2)
+
+dev_0.3
+[![Build Status](https://travis-ci.org/flyher/totoro.svg?branch=dev_0.3)](https://travis-ci.org/flyher/totoro?branch=dev_0.3)
+
+
+
+[![Release Version](https://img.shields.io/github/release/flyher/totoro.svg)](https://github.com/flyher/totoro/releases)
+[![Issues](https://img.shields.io/github/issues/flyher/totoro.svg)](https://github.com/flyher/totoro/issues)
+[![Software License](https://img.shields.io/github/license/flyher/totoro.svg)](https://github.com/flyher/totoro/blob/dev_0.1.1/LICENSE)
+
 A resume base on AngularJS, Bootstrap, Typescript, Package by Gulp and Webpack.
 
 #
@@ -44,14 +64,14 @@ A resume base on AngularJS, Bootstrap, Typescript, Package by Gulp and Webpack.
 ```log
 dev_0.1  AngularJS 1 custom
 |
-|-dev_0.1.1 AngularJS 1 + ES6 + Less + Webpack - build success
-|-dev_0.1.2 AngularJS 1 + Gulp - build success
+|-dev_0.1.1 AngularJS 1 + ES6 + Less + Webpack
+|-dev_0.1.2 AngularJS 1 + Gulp
 
-dev_0.2 AngularJS 1.5 component + Typescript + Scss + Webpack - build fail
+dev_0.2 AngularJS 1.5 component + Typescript + Scss + Webpack
 |
 |-dev_temp temp code
 
-dev_0.3 AngularJS 2+ component + Typescript + Less + Webpack - build success
+dev_0.3 AngularJS 2+ component + Typescript + Less + Webpack
 
 gh-pages push from branch dev_1.1.2
 
