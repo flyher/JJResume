@@ -1,5 +1,6 @@
 Angular1 + Bootstrap + Webpack
 
+[Simplified Chinese](README-CN.md)
 
 ### update log
 
