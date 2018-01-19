@@ -1,57 +1,15 @@
-# Totoro
-一个基于Angular2+中组件，TypeScript, Bootstrap, TypeScript 和 WebPack的简历模板
-#
-[demo](http://resume.99diary.com)
-
-### 功能需求
-
-- [x] 基本对象绑定
-
-- [x] 友好的浏览器提示
-
-- [x] 主题切换
-
-- [ ] 简易搜索
-
-- [ ] 多语言支持
-
-- [ ] 导出文档
-
-- [ ] 统计报表
-
-- [ ] 按需加载
-
-- [ ] 打包模板
-
-- [ ] 单元测试
-
-### 浏览器支持
-
-| Browser | Support
-| ---- |:-----
-| IE9+ | 是
-| IE8 | 二维码提示
-| Chrome | 是
-| Firefox | 是
-| Opera 12+ | 是 
-| 微信 | 是
+AngularJS 2+ component + Bootstrap + TypeScript + Webpack
 
 ### 更新日志
 
 ```text
 2017-09-25
 Angular 2/4 重写
+```
 
-
+```text
 2017-09-21
 Angular 1.5 尝试代码
-
-
-todo 20170317
->1.分离页头页尾模板;
->2.gulp重写;
->3.增加unit test代码
->4.重写代码
 ```
 
 ```text
@@ -85,16 +43,4 @@ Angular2+
 
 [How to import component into another root component in Angular 2](https://stackoverflow.com/questions/39410417/how-to-import-component-into-another-root-component-in-angular-2)
 
-
 [Error: Can't resolve '@angular/core/src/metadata/directives'](https://github.com/angular/angular/issues/15679)
-
-
-### 开发工具
-
-~~Build by Visual Studio Community 2015~~
-
-Build by Visual Studio Code
-
-### 许可证
-
-Code in the Totoro project is licensed under the GPL.

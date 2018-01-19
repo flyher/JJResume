@@ -1,60 +1,18 @@
-# Totoro
-A resume base on AngularJS 2+ component, Bootstrap, TypeScript & WebPack.
-#
-[demo](https://resume.99diary.com)
+AngularJS 2+ component + Bootstrap + TypeScript + Webpack
 
 [Simplified Chinese](README-CN.md)
-
-### todo list
-
-- [x] bind data
-
-- [x] friendly tips for browser
-
-- [x] more themes
-
-- [ ] easy to search
-
-- [ ] multi-language support
-
-- [ ] export document
-
-- [ ] statistical report
-
-- [ ] load on demand
-
-- [ ] package template 
-
-- [ ] unit test
-
-### Browser
-
-| Browser | Support
-| ---- |:-----
-| IE9+ | Yes
-| IE8 | QR code tip
-| Chrome | Yes
-| Firefox | Yes
-| Opera 12+ | Yes 
-| weChat | Yes
 
 ### update log
 
 ```text
 2017-09-25
 rewrite by Angular 2/4
+```
 
-
+```text
 2017-09-21
 Angular 1.5
-
 beta version for test
-
-todo
->1.separate the template for header and footer;
->2.gulp support;
->3.add unit test code
->4.rewrite all code
 ```
 
 ```text
@@ -91,13 +49,3 @@ Angular2+
 
 [Error: Can't resolve '@angular/core/src/metadata/directives'](https://github.com/angular/angular/issues/15679)
 
-
-### Tools
-
-~~Build by Visual Studio Community 2015~~
-
-Build by Visual Studio Code
-
-### License
-
-Code in the Totoro project is licensed under the GPL.
