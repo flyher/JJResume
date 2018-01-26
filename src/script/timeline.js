@@ -264,8 +264,21 @@ timelineApp.controller('timelineController', function ($scope) {
           }
         ]
       }
-    ]
+    ],
+    config: {
+      account: 'root',
+      password: '%23Y12mL',
+      haslogin: false,
+      error: false
+    }
   };
+
+  $scope.totoro = {
+    user: {
+      un: '',
+      pwd: '',
+    }
+  }
 
   $scope.ie8 = false;
 
@@ -329,6 +342,16 @@ timelineApp.controller('timelineController', function ($scope) {
   $scope.change_theme = function (color) {
     $scope.linecolor = color.key;
   };
+
+  $scope.login = function () {
+    if (encodeURIComponent($scope.totoro.user.un) === $scope.timeline.config.account &&
+      encodeURIComponent($scope.totoro.user.pwd) === $scope.timeline.config.password) {
+      $scope.timeline.config.haslogin = true;
+      $scope.timeline.config.error = false;
+    } else {
+      $scope.timeline.config.error = true;
+    }
+  }
 
   // $scope.search_tag = function () {
   // var projects_tmp = []

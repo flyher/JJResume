@@ -14,19 +14,20 @@
 </head>
 
 <body>
-  <div class="ng-cloak" ng-app="timelineApp" ng-controller="timelineController" ng-class="!ie8?'':'hidden'">
-    <div class="blog-masthead" ng-style="{'background-color':linecolor}">
+  <div class="timeline ng-cloak" ng-app="timelineApp" ng-controller="timelineController" ng-class="!ie8?'':'hidden'">
+    <div class="blog-masthead" ng-style="{'background-color':linecolor}" ng-if="timeline.config.haslogin">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item" href="https://www.99diary.com">博客</a>
-          <a class="blog-nav-item active" href="#">简历</a>
-          <a class="blog-nav-item" href="https://blog.99diary.com/about/me">关于我</a>
+          <a class="blog-nav-item" href="https://www.99diary.com">Blog</a>
+          <a class="blog-nav-item active" href="#">Totoro</a>
+          <a class="blog-nav-item" href="https://project.99diary.com">Fleece</a>
+          <a class="blog-nav-item" href="https://blog.99diary.com/about/me">About Me</a>
         </nav>
       </div>
     </div>
 
 
-    <div class="container">
+    <div class="container" ng-if="timeline.config.haslogin">
       <div class="blog-header">
         <h1 class="blog-title"></h1>
         <p class="lead blog-description"></p>
@@ -182,6 +183,37 @@
         Powered by
         <a href="https://github.com/flyher/totoro" target="_blank">flyher</a>
       </div>
+    </div>
+
+    <div class="permission-panel container" ng-if="!timeline.config.haslogin">
+        <form class="form-signin login-panel">
+            <div class="text-center mb-4">
+              <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+              <h1 class="h3 mb-3 font-weight-normal">Totoro Login</h1>
+              <p>Sign in Totoro with your account.</a></p>
+            </div>
+      
+            <div class="form-label-group">
+              <label for="inputEmail">Username</label>
+              <input type="username" id="inputUsername" class="form-control" placeholder="Username" required="" autofocus="" ng-model="totoro.user.un">
+            </div>
+      
+            <div class="form-label-group">
+              <label for="inputPassword">Password</label>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" ng-model="totoro.user.pwd">
+            </div>
+      
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <div class="alert alert-danger" role="alert" ng-show="timeline.config.error">
+                <strong>Oh snap!</strong> Try submitting again.
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="login()">Sign in</button>
+            <p class="mt-5 mb-3 text-muted text-center">© 2014-2018</p>
+          </form>
     </div>
   </div>
 </body>
