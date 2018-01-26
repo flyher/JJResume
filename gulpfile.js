@@ -18,14 +18,22 @@ var gulp = require('gulp'),
   ngAnnotate = require('gulp-ng-annotate');//用于ng的压缩
 
 gulp.task('styleapp', function () {
-  return gulp.src(['src/lib/bootstrap-3.3.4-dist/*.css', 'src/style/totoro/*.css'], { style: 'expanded' })
+  return gulp.src([
+    'src/lib/bootstrap-3.3.4-dist/*.css',
+    // 'src/lib/bootstrap-4.0.0/bootstrap.min.css',
+    'src/style/totoro/*.css',
+    'src/style/totoro/*.less'
+  ], { style: 'expanded' })
     .pipe(autoprefixer('last 2 version'))
+    .pipe(less())
     .pipe(concat('app.css'))
     // .pipe(gulp.dest('dist/dev'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
     .pipe(gulp.dest('dist/style'))
 });
+
+
 
 // gulp.task('styleapp', function () {
 //   return gulp.src('src/style/totoro/*.css', { style: 'expanded' })
@@ -97,7 +105,7 @@ gulp.task('script', function () {
 });
 
 gulp.task('default', function () {
-  gulp.start('clean', 'style', 'script', 'images', 'html');
+  gulp.start('clean', ['style', 'script', 'images', 'html']);
 });
 // gulp.task('watch', function () {
 //   gulp.watch('src/style/*.css', ['styles']);
