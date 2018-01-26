@@ -267,7 +267,10 @@ timelineApp.controller('timelineController', function ($scope) {
     ],
     config: {
       account: 'root',
-      password: '%23Y12mL',
+      passwords: [
+        '%23Y12mL',
+        '1241212'
+      ],
       haslogin: false,
       error: false
     }
@@ -344,11 +347,25 @@ timelineApp.controller('timelineController', function ($scope) {
   };
 
   $scope.login = function () {
-    if (encodeURIComponent($scope.totoro.user.un) === $scope.timeline.config.account &&
-      encodeURIComponent($scope.totoro.user.pwd) === $scope.timeline.config.password) {
-      $scope.timeline.config.haslogin = true;
-      $scope.timeline.config.error = false;
+
+    if (encodeURIComponent($scope.totoro.user.un) === $scope.timeline.config.account) {
+      var pwd = encodeURIComponent($scope.totoro.user.pwd);
+      var status = false;
+      $scope.timeline.config.password.forEach(element => {
+        if (element === pwd) {
+          status = true;
+        }
+      });
+      if (status) {
+        $scope.timeline.config.haslogin = true;
+        $scope.timeline.config.error = false;
+      }
+      else {
+        $scope.timeline.config.haslogin = false;
+        $scope.timeline.config.error = true;
+      }
     } else {
+      $scope.timeline.config.haslogin = false;
       $scope.timeline.config.error = true;
     }
   }
