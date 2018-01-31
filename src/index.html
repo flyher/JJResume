@@ -128,7 +128,7 @@
                       <h6 ng-if="history.envir.length>0">开发环境:{{history.envir}}</h6>
                       <h6 ng-if="history.urls.length>0">
                         访问地址:
-                        <a class="link" ng-style="{'color':linecolor}" href="https://tools.99diary.com/brige.html?url={{url.url}}" ng-repeat="url in history.urls"
+                        <a class="link" ng-style="{'color':linecolor}" href="https://tools.99diary.com#/brige?url={{url.url}}" ng-repeat="url in history.urls"
                           target="_blank">地址{{url.id+1}}</a>
                         <!--<span class="link" ng-repeat="url in history.urls" ng-click="open_link(url)">地址{{url.id+1}}</span>-->
                       </h6>
