@@ -55,6 +55,16 @@ gulp.task('scriptlib', function () {
     .pipe(uglify())
     .pipe(gulp.dest('dist/script'))
 });
+gulp.task('scriptga', function () {
+  return gulp.src('src/lib/ga/ga.js')
+    // .pipe(jshint('.jshintrc'))
+    // .pipe(jshint())
+    .pipe(jshint.reporter('default'))
+    .pipe(concat('ga.js'))
+    // .pipe(rename({ suffix: '.min' }))
+    // .pipe(uglify())
+    .pipe(gulp.dest('dist/script'))
+});
 
 gulp.task('scriptapp', function () {
   return gulp.src('src/script/*.js')
@@ -101,7 +111,7 @@ gulp.task('style', function () {
 });
 
 gulp.task('script', function () {
-  gulp.start('scriptlib', 'scriptapp');
+  gulp.start('scriptlib', 'scriptga', 'scriptapp');
 });
 
 gulp.task('default', function () {
