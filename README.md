@@ -33,6 +33,8 @@ A resume base on AngularJS, Bootstrap, Typescript, Package by Gulp and Webpack.
 
 - [x] more themes
 
+- [x] support simple login 
+
 - [ ] easy to search
 
 - [ ] multi-language support
