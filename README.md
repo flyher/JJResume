@@ -5,6 +5,12 @@ Angular1 + Bootstrap + Webpack
 ### update log
 
 ```text
+2018-01-31
+>1.support simple login;
+>2.update brige url
+```
+
+```text
 2018-01-15
 >1.support import;
 >2.package by webpack
