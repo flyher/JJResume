@@ -3,6 +3,10 @@ Angular1 + Bootstrap + Gulp
 ### 更新日志
 
 ```text
+2018-01-31
+>1.支持简单的用户登录;
+>2.更新brige跳转链接
+
 2018-01-18
 >1.支持import模式;
 >2.gulp打包
