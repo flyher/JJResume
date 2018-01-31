@@ -4,11 +4,6 @@ Angular1 + Bootstrap + Webpack
 ### 更新日志
 
 ```text
-todo 20170317
->1.分离页头页尾模板;
->2.gulp重写;
->3.增加unit test代码
->4.重写代码
 ```
 
 ```text

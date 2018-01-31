@@ -1,2 +1,2 @@
-src/common/lib/*.js
-src/common/lib/*/*.js
+src/lib/*.js
+src/lib/*/*.js

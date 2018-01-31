@@ -267,7 +267,23 @@ timelineApp.controller('timelineController', function ($scope) {
           }
         ]
       }
-    ]
+    ],
+    config: {
+      account: 'root',
+      passwords: [
+        '%23Y12mL',
+        '1241212'
+      ],
+      haslogin: false,
+      error: false
+    }
+  };
+
+  $scope.totoro = {
+    user: {
+      un: '',
+      pwd: ''
+    }
   };
 
   $scope.ie8 = false;
@@ -331,6 +347,33 @@ timelineApp.controller('timelineController', function ($scope) {
 
   $scope.change_theme = function (color) {
     $scope.linecolor = color.key;
+  };
+
+  $scope.login = function () {
+    if (encodeURIComponent($scope.totoro.user.un) === $scope.timeline.config.account) {
+      var pwd = encodeURIComponent($scope.totoro.user.pwd);
+      var status = false;
+      // $scope.timeline.config.passwords.forEach(element => {
+      //   if (element === pwd) {
+      //     status = true;
+      //   }
+      // });
+      for (var index = 0; index < $scope.timeline.config.passwords.length; index++) {
+        if ($scope.timeline.config.passwords[index] === pwd) {
+          status = true;
+        }
+      }
+      if (status) {
+        $scope.timeline.config.haslogin = true;
+        $scope.timeline.config.error = false;
+      } else {
+        $scope.timeline.config.haslogin = false;
+        $scope.timeline.config.error = true;
+      }
+    } else {
+      $scope.timeline.config.haslogin = false;
+      $scope.timeline.config.error = true;
+    }
   };
 
   // $scope.search_tag = function () {

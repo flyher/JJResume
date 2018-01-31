@@ -10,14 +10,12 @@ module.exports = {
     // 'script/lib': [
     //   './src/lib/bootstrap-3.3.4-dist/bootstrap.min.js'
     // ],
-    'script/app': [path.resolve(__dirname, './src/script/timeline.js')]
+    'script/app': [path.resolve(__dirname, './src/script/timeline.js')],
+    'script/ga': ['./src/lib/ga/ga.js']
   },
   output: {
     path: path.join(__dirname, '/dist'),
-    publicPath:
-      process.env.NODE_ENV === 'release'
-        ? '/dist/'
-        : 'http://localhost:8889/dist/',
+    publicPath: '/dist/',
     filename: '[name].bundle.js'
   },
   module: {

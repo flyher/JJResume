@@ -8,24 +8,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="欢迎访问我的个人简历,寻找Web前端(全栈)的工作机会" />
-  <meta name="keywords" content="个人简历,前端,后端,Resume,Web,JavaScript,JS,JQuery,AngularJS,ReactJS,NodeJS,Asp.Net,C#,WebSerice"
+  <meta name="keywords" content="个人简历,前端,后端,Resume,Web,JavaScript,JS,JQuery,AngularJS,ReactJS,VueJS,NodeJS,Asp.Net,C#,WebSerice"
   />
 </head>
 
 <body>
-  <div class="ng-cloak" ng-app="timelineApp" ng-controller="timelineController" ng-class="!ie8?'':'hidden'">
-    <div class="blog-masthead" ng-style="{'background-color':linecolor}">
+  <div class="timeline ng-cloak" ng-app="timelineApp" ng-controller="timelineController" ng-class="!ie8?'':'hidden'">
+    <div class="blog-masthead" ng-style="{'background-color':linecolor}" ng-if="timeline.config.haslogin">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item" href="https://www.99diary.com">博客</a>
-          <a class="blog-nav-item active" href="#">简历</a>
-          <a class="blog-nav-item" href="https://blog.99diary.com/about/me">关于我</a>
+          <a class="blog-nav-item" href="https://www.99diary.com">Blog</a>
+          <a class="blog-nav-item active" href="#">Totoro</a>
+          <a class="blog-nav-item" href="https://project.99diary.com">Fleece</a>
+          <a class="blog-nav-item" href="https://blog.99diary.com/about/me">About Me</a>
         </nav>
       </div>
     </div>
 
 
-    <div class="container">
+    <div class="container" ng-if="timeline.config.haslogin">
       <div class="blog-header">
         <h1 class="blog-title"></h1>
         <p class="lead blog-description"></p>
@@ -126,7 +127,7 @@
                       <h6 ng-if="history.envir.length>0">开发环境:{{history.envir}}</h6>
                       <h6 ng-if="history.urls.length>0">
                         访问地址:
-                        <a class="link" ng-style="{'color':linecolor}" href="https://tools.99diary.com/brige.html?url={{url.url}}" ng-repeat="url in history.urls"
+                        <a class="link" ng-style="{'color':linecolor}" href="https://tools.99diary.com/#/brige?url={{url.url}}" ng-repeat="url in history.urls"
                           target="_blank">地址{{url.id+1}}</a>
                         <!--<span class="link" ng-repeat="url in history.urls" ng-click="open_link(url)">地址{{url.id+1}}</span>-->
                       </h6>
@@ -182,6 +183,37 @@
         <a href="https://github.com/flyher/totoro" target="_blank">flyher</a>
       </div>
     </div>
+
+    <div class="permission-panel container" ng-if="!timeline.config.haslogin">
+        <form class="form-signin login-panel">
+            <div class="text-center mb-4">
+              <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+              <h1 class="h3 mb-3 font-weight-normal">Totoro Login</h1>
+              <p>Sign in Totoro with your account.</a></p>
+            </div>
+      
+            <div class="form-label-group">
+              <label for="inputEmail">Username</label>
+              <input type="username" id="inputUsername" class="form-control" placeholder="Username" required="" autofocus="" ng-model="totoro.user.un">
+            </div>
+      
+            <div class="form-label-group">
+              <label for="inputPassword">Password</label>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" ng-model="totoro.user.pwd">
+            </div>
+      
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <div class="alert alert-danger" role="alert" ng-show="timeline.config.error">
+                <strong>Oh snap!</strong> Try submitting again.
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="login()">Sign in</button>
+            <p class="mt-5 mb-3 text-muted text-center">© 2014-2018</p>
+          </form>
+    </div>
   </div>
 </body>
 
@@ -191,26 +223,15 @@
         <h4>哥们，您的浏览器太古老了，该升级了 ~</h4>
     </div>
     <div class="qrcode-website-bg">
-        <img src="img/qrcode-website.png" />
+        <img src="image/qrcode-website.png" />
     </div>
     <div class="qrcode-website-bg">
         你也可以使用手机浏览器扫一扫打开我的简历。
     </div>
 </div>
 <![endif]-->
-
+<!-- <script type="text/javascript" src="script/lib.min.js"></script> -->
 <script type="text/javascript" src="script/app.bundle.js"></script>
-<script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date(); a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-  ga('create', 'UA-65955218-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+<script type="text/javascript" src="script/ga.bundle.js"></script>
 
 </html>
