@@ -196,3 +196,5 @@ FakesAssemblies/
 *.opt
 
 dist/
+README-CN.md
+README.md
